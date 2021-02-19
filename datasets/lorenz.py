@@ -9,7 +9,7 @@ class Lorenz(ABC):
         self.tmax = tmax
         self.X0 = X0
         self.num_samples = num_samples
-        self.trajectory = self._integrate() # Shape (*, num_samples)
+        self.trajectory = self._integrate() # Shape (dim, num_samples)
     
     @abstractmethod
     def _model(self, t, X):
@@ -23,14 +23,14 @@ class Lorenz(ABC):
 
     @abstractmethod
     def plot(self):
-        """Method to plot trajectory of Lorenz system"""
+        """Plot trajectory of Lorenz system"""
         ...
 
 class Lorenz63(Lorenz):
     def __init__(self, tmax, X0, num_samples):
         self._sigma = 10.
         self._beta = 8/3
-        self._rho = 28
+        self._rho = 28.
         super().__init__(tmax, X0, num_samples)
 
     def _model(self, t, X):
