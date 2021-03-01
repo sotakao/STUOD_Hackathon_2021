@@ -2,7 +2,7 @@
 ![stuod logo](https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/erc-stuod-logos--tojpeg_1572609986634_x2.jpg)
 ## Challenge 3: Machine Learning with Weather and Climate Data
 
-### Task 1: Predicting the rain intensity in Basel during the period 2019-2021
+### Task 1: Predicting rainfall in Basel, Switzerland during the period 2019-2021
 Can you predict the amount of rainfall in Basel based on the following 6 categories?
 
 - No rain (0 mm)
