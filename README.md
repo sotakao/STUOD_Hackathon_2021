@@ -2,15 +2,17 @@
 ![stuod logo](https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/erc-stuod-logos--tojpeg_1572609986634_x2.jpg)
 ## Challenge 3: Machine Learning with Weather and Climate Data
 
+[Link to the event website](https://www.imperial.ac.uk/events/129398/stuods-hackathon/)
+
 ### Task 1: Predicting the rainfall in Basel, Switzerland during the period 2019-2021
 Rainfall intensity can be categorized as follows:
 
-- No rain (0 mm)
-- Very light rain (0.01 - 2.5mm)
-- Light rain (2.5 - 7.5mm)
-- Moderate rain (7.5 - 35.5mm)
-- Rather heavy rain (35.5 - 64.5mm)
-- Heavy rain (>64.5mm)
+- No rain (0 mm/hr)
+- Very light rain (0.01 - 2.5mm/hr)
+- Light rain (2.5 - 7.5mm/hr)
+- Moderate rain (7.5 - 35.5mm/hr)
+- Rather heavy rain (35.5 - 64.5mm/hr)
+- Heavy rain (>64.5mm/hr)
 
 Your task is to predict the hourly rainfall (based on the 6 categories) in Basel, Switzerland during the period 03/2019-03/2021 from various weather attributes such as temperature, wind velocity and pressure (pre-downloaded dataset can be found in the `datasets` folder. More details below).
 
@@ -22,17 +24,17 @@ Some ideas include predicting renewable energy sources such as solar irradiance 
 
 ### Datasets
 
-- Lorenz models (63/96)
+- Lorenz models (used in `tutorials`)
 - Meteoblue dataset
 - Met office data
 
 ### Tutorials
 
-In the `tutorials` folder, you can find a three-part tutorial series on machine learning to get you started with the hackathon.
-This includes a discussion on:
+In the `tutorials` folder, you can find a three-part climate-themed tutorial series on machine learning to get you started with the hackathon.
+This includes discussions on:
 
-- Solving classification tasks with ML taking the Lorenz 63 model as a case study
-- Regression study with Lorenz 96 model
+- Using the Lorenz 63 model to learn about statistical classification
+- Using the Lorenz 96 model to learn about regression
 - Handling real data with `pandas` using a simplified version of the meteoblue data
 
 This tutorial series is aimed at those who are new to machine learning or are just getting started.
