@@ -12,7 +12,7 @@ Rainfall intensity can be categorized as follows:
 - Rather heavy rain (35.5 - 64.5mm)
 - Heavy rain (>64.5mm)
 
-Your task is to predict the hourly rainfall (based on the 6 categories) in Basel, Switzerland during the period 03/2019-03/2021 from various weather attributes such as temperature, wind velocity and pressure.
+Your task is to predict the hourly rainfall (based on the 6 categories) in Basel, Switzerland during the period 03/2019-03/2021 from various weather attributes such as temperature, wind velocity and pressure (pred-downloaded dataset can be found in the "datasets" folder. More details below).
 
 Data from [meteoblue](https://www.meteoblue.com/en/weather/archive/export/basel_switzerland_2661604?daterange=2019-02-01%20to%202021-03-01&domain=NEMSAUTO&params%5B%5D=temp2m&params%5B%5D=precip&params%5B%5D=relhum2m&min=2020-02-01&max=2021-03-01&utc_offset=1&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30).
 
