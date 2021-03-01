@@ -4,7 +4,7 @@
 
 [Link to the event website](https://www.imperial.ac.uk/events/129398/stuods-hackathon/)
 
-### Task 1: Predicting the rainfall in Basel, Switzerland during the period 2019-2021
+### Task A: Predicting the rainfall in Basel, Switzerland during the period 2019-2021
 Rainfall intensity can be categorized as follows:
 
 - No rain (0 mm/hr)
@@ -18,7 +18,7 @@ Your task is to predict the hourly rainfall (based on the 6 categories) in Basel
 
 Data downloaded from [meteoblue](https://www.meteoblue.com/en/weather/archive/export/basel_switzerland_2661604?daterange=2019-02-01%20to%202021-03-01&domain=NEMSAUTO&params%5B%5D=temp2m&params%5B%5D=precip&params%5B%5D=relhum2m&min=2020-02-01&max=2021-03-01&utc_offset=1&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30).
 
-### Task 2 (open-ended): Using data from the Met office to tackle climate change
+### Task B (open-ended): Using data from the Met office to tackle climate change
 
 Some ideas include predicting renewable energy sources such as solar irradiance and wind power.
 
