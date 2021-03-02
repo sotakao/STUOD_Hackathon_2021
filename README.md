@@ -35,7 +35,7 @@ This includes discussions on:
 - Using the Lorenz 96 model to learn about regression
 - Handling real data with `pandas` using a simplified version of the meteoblue data
 
-The tutorial is aimed at those who are new to machine learning or are just getting started.
+The tutorial is aimed at students and researchers who are new to machine learning or are just getting started.
 
 Todo: Convert it to binder or colab format to make it interactive
 
