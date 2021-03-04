@@ -28,7 +28,7 @@ Some ideas include predicting renewable energy sources such as solar irradiance 
 
 ### Tutorials
 
-In the `tutorials` folder, you will find a three-part climate-themed tutorial on machine learning that will get you up to speed with the tools required for the hackathon.
+In the `tutorials` folder, you will find a three-part climate-themed tutorial on machine learning that will get you up to speed with the tools required to start hacking.
 This includes discussions on:
 
 - Using the Lorenz 63 model to learn about statistical classification
