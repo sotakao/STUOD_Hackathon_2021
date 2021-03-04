@@ -8,7 +8,7 @@
 Rainfall intensity can be categorized as follows:
 
 - No rain (0 mm/hr)
-- Very light rain (0.01 - 2.5mm/hr)
+- Drizzle (0.01 - 2.5mm/hr)
 - Light rain (2.5 - 7.5mm/hr)
 - Moderate rain (7.5 - 35.5mm/hr)
 - Rather heavy rain (35.5 - 64.5mm/hr)
