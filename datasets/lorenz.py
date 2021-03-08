@@ -94,14 +94,14 @@ class Lorenz96():
         fig = plt.figure(figsize=(17, 3))
         ax = plt.subplot(1, 2, 1)
         for i in range(5):
-            plt.plot(timestamps, X[:,i], label=f'X{i}')
+            plt.plot(timestamps, X[:,i], label=f'X{i+1}')
             ax.set_xlabel('time', fontsize=15)
             ax.set_ylabel('x', fontsize=15)
             ax.set_title('Slow modes (X)', fontsize=15)
             ax.legend()
         ax = plt.subplot(1, 2, 2)
         for i in range(5):
-            plt.plot(timestamps, Y[:,i], label=f'Y{i}')
+            plt.plot(timestamps, Y[:,i], label=f'Y{i+1}')
             ax.set_xlabel('time', fontsize=15)
             ax.set_ylabel('y', fontsize=15)
             ax.set_title('Fast modes (Y)', fontsize=15)
