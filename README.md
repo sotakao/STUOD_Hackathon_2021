@@ -24,6 +24,7 @@ Some ideas include predicting renewable energy sources such as solar irradiance 
 
 - Lorenz models (used in `tutorials`)
 - Meteoblue dataset
+Can get via `!wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1aUmX88kC5zCS0IWodv1lqjUwJw1j5JMs' -O meteoblue.csv`
 - Met office data
 
 ### Tutorials
