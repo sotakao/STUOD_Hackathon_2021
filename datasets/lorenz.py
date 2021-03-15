@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from scipy.integrate import solve_ivp
+from copy import deepcopy
 from tqdm import tqdm
 
 class Lorenz63():
@@ -49,8 +50,8 @@ class Lorenz96():
         self._F = 10
         self._K = X0.shape[0]
         self._J = round(Y0.shape[0]/self._K)
-        self._X = X0
-        self._Y = Y0
+        self._X = deepcopy(X0)
+        self._Y = deepcopy(Y0)
         self.num_samples = num_samples
         self.tmax = tmax
         self.dt = tmax/num_samples
@@ -69,6 +70,7 @@ class Lorenz96():
         dXdt = -np.roll(X, -1) * (np.roll(X, -2) - np.roll(X, 1)) - X + F - h * c * Y.reshape(K, J).mean(1)
         dYdt = c * (b * np.roll(Y, 1) * (np.roll(Y, 2) - np.roll(Y, -1)) - Y + (h / J) * np.repeat(X, J))
         return (dXdt, dYdt)
+
     
     def step(self):
         """One time step of RK4 scheme"""
