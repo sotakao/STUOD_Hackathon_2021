@@ -30,7 +30,7 @@ __Additional comments:__ This project is suitable for participants of all levels
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
-An El Nino event is characterised by a warmer-than-average sea surface temperature in the equatorial pacific that persists for an extended period of time. This has a significant impact on Earth's ecosystem and is crucial that we are able to predict this. While there is no agreed definition of an El Nino event, a popular one that we will use in this challenge is:
+An El Nino event is characterised by a warmer-than-average sea surface temperature in the equatorial pacific that persists for an extended period of time. This has a significant impact on Earth's ecosystem and is crucial that we are able to predict this. While there is no agreed definition of an El Nino event, a popular one that we will use for this challenge is:
 
 __El Nino:__ An event where the 5 months running average of the sea surface temperature anomaly in the Nino 3.4 region 5°S ~ 5°N, 120° ~ 170°W (equivalently, -5° ~ 5°N, 190° ~ 240°E) exceeds 0.4°C for a period of 6 months or longer.
 
