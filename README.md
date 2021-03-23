@@ -72,7 +72,7 @@ Here, `[geophysical_variable]` is to be replaced by one of the following geophys
 
 ### Tutorials
 
-We have also provided an interactive three-part machine learning tutorial in the `tutorials` folder (aimed mostly for beginners) that will get all the particpants up to speed in order to start hacking.
+We have also provided an interactive three-part machine learning tutorial in the `tutorials` folder that will get all the particpants up to speed with the hackathon.
 
 This includes a detailed guide on:
 
