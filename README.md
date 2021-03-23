@@ -24,7 +24,7 @@ Your task is to predict the hourly rainfall in Basel, Switzerland during the per
 
 __Data:__ The dataset for the period 03/2010-03/2020 (downloaded from [meteoblue.com](https://www.meteoblue.com/en/weather/archive/export/basel_switzerland_2661604?daterange=2019-02-01%20to%202021-03-01&domain=NEMSAUTO&params%5B%5D=temp2m&params%5B%5D=precip&params%5B%5D=relhum2m&min=2020-02-01&max=2021-03-01&utc_offset=1&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30)), is already available and can be found in the `datasets` folder. The dataset for the period 03/2020-03/2021, which is to be used for testing will be uploaded in the `datasets` folder on 30/03/2021 at 2pm (second day of the hackathon) so keep an eye out for that!
 
-__Additional comment:__ This project is suitable for participants of all levels, as the dataset is relatively small and easy to handle (a short guide is available in the `tutorials` folder). However, that is not to say that it is not appropriate for more experienced participants as there are many interesting things one can do with this, such as figuring out how to deal with imbalanced classes or predicting the timeseries of all variables at once using ML models such as LSTMs.
+__Additional comments:__ This project is suitable for participants of all levels, as the dataset is relatively small and easy to handle (a short guide is available in the `tutorials` folder). However, that is not to say that it is not appropriate for more experienced participants as there are many interesting things one can do with this, such as figuring out how to deal with imbalanced classes or predicting the timeseries of all variables at once using ML models such as LSTMs.
 
 ### Challenge 2: Predicting the trajectories of tropical cyclones
 
@@ -51,17 +51,23 @@ Some datasets are already available on this github repository, which includes:
 
 You can also download the meteoblue dataset from [google drive](https://drive.google.com/drive/folders/1qFDy1qPg63MNmrFjiBHMlS4Mz14yzJ-C) or download it directly from terminal with the command:
 
-`wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv`
+```
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv
+```
 
 The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, however this link may not work on some browsers. Alternatively, you can get it from terminal via the command:
 
-`wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[geophysical_variable].nc.gz -O filename.nc.gz`
+```
+wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[variable].nc.gz -O filename.nc.gz
+```
 
-and then unzip the file using
+and then unzip using
 
-`gunzip -d filename.nc.gz`
+```
+gunzip -d filename.nc.gz
+```
 
-Here, `[geophysical_variable]` is to be replaced by one of the following geophysical variables:
+Here, `[variable]` is to be replaced by one of the following geophysical variables:
 - `cci_sst_1981_2018` or `cci_sst_anomalies_1981_2018`: sea surface temperature/anomalies from ESA CCI SST project (satellite)
 - `cci_sss_2010_2019` or `cci_sss_anomalies_2010_2019`:  sea surface salinity/anomalies from ESA CCI SSS project (satellite)
 - `isas_temperature_2002_2019` or `isas_temperature_anomalies_2002_2019`: water temperature in the first 300 m from Ifremer ISAS15 dataset (in situ measurements)
