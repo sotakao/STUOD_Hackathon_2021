@@ -49,12 +49,10 @@ Several datasets are already available on this github repository, including some
 - Toy version of the meteoblue dataset (used in `tutorials`)
 - Full version of the meteoblue dataset for Challenge 1 (14.5MB total)
 
-#### Meteoblue data for rainfall prediction
 You can also download the meteoblue dataset from [google drive](https://drive.google.com/drive/folders/1qFDy1qPg63MNmrFjiBHMlS4Mz14yzJ-C) or download it directly from terminal with the command:
 
 `wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv`
 
-#### El Nino dataset
 The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, however this link may not work on some browsers. Alternatively, you can get it from terminal via the command:
 
 `wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[geophysical_variable].nc.gz -O filename.nc.gz`
