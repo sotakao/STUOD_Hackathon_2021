@@ -57,9 +57,11 @@ The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/project
 
 `wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[geophysical_variable].nc.gz -O filename.nc.gz`
 
+and then unzip the file using
+
 `gunzip -d filename.nc.gz`
 
-where `[geophysical_variable]` is to be replaced by one of the following geophysical variables:
+Here, `[geophysical_variable]` is to be replaced by one of the following geophysical variables:
 - `cci_sst_1981_2018` or `cci_sst_anomalies_1981_2018`: sea surface temperature/anomalies from ESA CCI SST project (satellite)
 - `cci_sss_2010_2019` or `cci_sss_anomalies_2010_2019`:  sea surface salinity/anomalies from ESA CCI SSS project (satellite)
 - `isas_temperature_2002_2019` or `isas_temperature_anomalies_2002_2019`: water temperature in the first 300 m from Ifremer ISAS15 dataset (in situ measurements)
