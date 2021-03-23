@@ -61,13 +61,7 @@ The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/project
 wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[variable].nc.gz -O filename.nc.gz
 ```
 
-and then unzip using
-
-```
-gunzip -d filename.nc.gz
-```
-
-Here, `[variable]` is to be replaced by one of the following geophysical variables:
+where `[variable]` is to be replaced by one of the following geophysical variables:
 - `cci_sst_1981_2018` or `cci_sst_anomalies_1981_2018`: sea surface temperature/anomalies from ESA CCI SST project (satellite)
 - `cci_sss_2010_2019` or `cci_sss_anomalies_2010_2019`:  sea surface salinity/anomalies from ESA CCI SSS project (satellite)
 - `isas_temperature_2002_2019` or `isas_temperature_anomalies_2002_2019`: water temperature in the first 300 m from Ifremer ISAS15 dataset (in situ measurements)
@@ -75,6 +69,12 @@ Here, `[variable]` is to be replaced by one of the following geophysical variabl
 - `ifremer_wind_1992_2019` or `ifremer_wind_anomalies_1992_2019`: wind_speed, eastward and northward wind components from CMEMS/Ifremer Multi-sensor blended dataset (satellite)
 - `gpcp_precipitation_2010_2019` or `gpcp_precipitation_anomalies_2010_2019`: precipitation, from NASA GPCP dataset (satellite)
 - `aviso_sla_2002_2019` or `aviso_sla_anomalies_2002_2019`: sea level anomaly from AVISO multi-altimeter dataset (satellite) 
+
+After downloading, you can unzip the file with the command
+
+```
+gunzip -d filename.nc.gz
+```
 
 ### Tutorials
 
