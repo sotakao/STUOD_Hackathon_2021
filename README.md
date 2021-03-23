@@ -44,7 +44,7 @@ __Additional comments:__ This challenge is appropriate for more experienced part
 
 ### Datasets
 
-Several datasets are already available on this github repository, including some toy datasets that are used for the tutorials. This includes: 
+Some datasets are already available on this github repository, which includes: 
 - Synthetic data from Lorenz '63 and '96 models (used in `tutorials`)
 - Toy version of the meteoblue dataset (used in `tutorials`)
 - Full version of the meteoblue dataset for Challenge 1 (14.5MB total)
@@ -73,7 +73,6 @@ Here, `[geophysical_variable]` is to be replaced by one of the following geophys
 ### Tutorials
 
 We have also provided an interactive three-part machine learning tutorial in the `tutorials` folder that will get all the particpants up to speed with the hackathon.
-
 This includes a detailed guide on:
 
 - The basics of statistical classification using the Lorenz '63 model, where the task is to classify points on the Lorenz attractor depending on whether it lands on the left or right butterfy wing after some time.
