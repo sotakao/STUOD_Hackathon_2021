@@ -88,7 +88,7 @@ This includes a detailed guide on:
 
 Todo: Convert it to binder or colab format to make it interactive
 
-We have also included a short guide on how to use `python`'s `xarray` module for reading and handling netCDF files in `tutorials/getting-started-with-xarray`, which may be useful for participants working on Challenges 2 or 3.
+We have also included a short guide on how to use `python`'s `xarray` module for reading and handling netCDF files in `tutorials/getting-started-with-xarray`, which may be useful for Challenges 2 and 3.
 
 ### Acknowledgements
 
