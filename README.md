@@ -1,6 +1,6 @@
 # ERC Stochastic Transport in Upper Ocean Dynamics Hackathon March 29-31 2021
 ![stuod logo](https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/erc-stuod-logos--tojpeg_1572609986634_x2.jpg)
-## Challenge 1+2+3: Machine Learning with Weather and Climate Data
+## Challenges 1+2+3: Machine Learning with Weather and Climate Data
 
 __Project leads:__ So Takao (UCL), Bertrand Chapron (IFREMER)
 
@@ -8,7 +8,7 @@ Some weather/climate events such as, local precipitation events, tropical cyclon
 
 [Link to the event website](https://www.imperial.ac.uk/events/129398/stuods-hackathon/)
 
-The participants can choose to work on one of the following three tasks:
+The participants can choose to work on one of the following areas:
 
 ### Challenge 1: Predicting the rainfall in Basel, Switzerland during the period 2020-2021
 Rainfall intensity can be categorized as follows:
