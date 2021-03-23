@@ -1,14 +1,15 @@
 # ERC Stochastic Transport in Upper Ocean Dynamics Hackathon March 29-31 2021
 ![stuod logo](https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/erc-stuod-logos--tojpeg_1572609986634_x2.jpg)
-## Challenge 1+2+3: Machine Learning with Weather and Climate Data
-
-__Project leads:__ So Takao (UCL), Bertrand Chapron (IFREMER)
-
-Some weather/climate events such as, local precipitation events, tropical cyclone trajectoires, size and intensities, and/or El Nino occurrence and strength characteristics, still present major difficulties to forecast with conventional methods using numerical models. This proposed challenge is to explore the possibility of using recent machine learning techniques to deliver data-driven solutions to such complex problems.
 
 [Link to the event website](https://www.imperial.ac.uk/events/129398/stuods-hackathon/)
 
-The participants can choose to work on one of the following three tasks:
+## Challenges 1+2+3: Machine Learning with Weather and Climate Data
+
+__Project leads:__ So Takao (UCL), Bertrand Chapron (IFREMER)
+
+Some weather/climate events such as: local precipitation events, tropical cyclone trajectoires, size and intensities, and/or El Nino occurrence and strength characteristics, still present major difficulties to forecast with conventional methods using numerical models. This proposed challenge is to explore the possibility of using recent machine learning techniques to deliver data-driven solutions to such complex problems.
+
+The participants can choose to work on one of the following areas:
 
 ### Challenge 1: Predicting the rainfall in Basel, Switzerland during the period 2020-2021
 Rainfall intensity can be categorized as follows:
@@ -22,17 +23,17 @@ Rainfall intensity can be categorized as follows:
 
 Your task is to predict the hourly rainfall in Basel, Switzerland during the period 03/2020-03/2021 based on the above 6 categories from various weather attributes such as temperature, wind velocity and pressure.
 
-__Data:__ The dataset for the period 03/2010-03/2020 (downloaded from [meteoblue.com](https://www.meteoblue.com/en/weather/archive/export/basel_switzerland_2661604?daterange=2019-02-01%20to%202021-03-01&domain=NEMSAUTO&params%5B%5D=temp2m&params%5B%5D=precip&params%5B%5D=relhum2m&min=2020-02-01&max=2021-03-01&utc_offset=1&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30)), is already available and can be found in the `datasets` folder. The dataset for the period 03/2020-03/2021, which is to be used for testing will be uploaded in the `datasets` folder on 30/03/2021 at 2pm (second day of the hackathon) so keep an eye out for that!
+__Data:__ The dataset for the period 03/2010-03/2020 (downloaded from [meteoblue.com](https://www.meteoblue.com/en/weather/archive/export/basel_switzerland_2661604?daterange=2019-02-01%20to%202021-03-01&domain=NEMSAUTO&params%5B%5D=temp2m&params%5B%5D=precip&params%5B%5D=relhum2m&min=2020-02-01&max=2021-03-01&utc_offset=1&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30)), is already available and can be found in the `datasets` folder. The dataset for the period 03/2020-03/2021, which is to be used for testing will be uploaded in the `datasets` folder on __30/03/2021 at 2pm__ (second day of hackathon) so keep an eye out!
 
-__Additional comments:__ This project is suitable for participants of all levels, as the dataset is relatively small and easy to handle (a short guide is available in the `tutorials` folder). However, that is not to say that it is not appropriate for more experienced participants as there are many interesting things one can do with this, such as figuring out how to deal with imbalanced classes or predicting the timeseries of all variables at once using ML models such as LSTMs.
+__Additional comments:__ This project is suitable for beginners, as the dataset is relatively small and easy to handle (a short guide is available in the `tutorials` folder). However, that is not to say that it is not appropriate for more experienced participants as there are many interesting things one can do with this, such as figuring out how to deal with imbalanced classes or predicting the timeseries of all variables at once using more advanced tools such as seq2seq and LSTMs!
 
 ### Challenge 2: Predicting the trajectories of tropical cyclones
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
-An El Nino event is characterised by a warmer-than-average sea surface temperature in the equatorial pacific that persists for an extended period of time. This has a significant impact on Earth's ecosystem and is crucial that we are able to predict this. While there is no agreed definition of an El Nino event, a popular one that we will use in this challenge is:
+An El Nino event is characterised by a warmer-than-average sea surface temperature in the equatorial pacific that persists for an extended period of time. This has a significant impact on Earth's ecosystem and is crucial that we are able to predict this. While there is no agreed definition of an El Nino event, a popular one that we will use for this challenge is:
 
-__El Nino:__ An event where the 5 months running average of the sea surface temperature anomaly in the Nino 3.4 region 5°S ~ 5°N, 120° ~ 170°W (equivalently, -5° ~ 5°N, 190° ~ 240°E) exceeds 0.4°C for a period of 6 months or longer.
+__El Nino ([Definition](https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers/defnBAMS.pdf)):__ An event where the 5 months running average of the sea surface temperature anomaly in the Nino 3.4 region 5°S ~ 5°N, 120° ~ 170°W (equivalently, -5° ~ 5°N, 190° ~ 240°E) exceeds 0.4°C for a period of 6 months or longer.
 
 ![el nino](images/nino.png)
 
@@ -87,7 +88,7 @@ This includes a detailed guide on:
 
 Todo: Convert it to binder or colab format to make it interactive
 
-We have also included a short guide on how to use `python`'s `xarray` module for reading and handling netCDF files in `tutorials/getting-started-with-xarray`, which may be useful for participants working on Challenges 2 or 3.
+We have also included a short guide on how to use `python`'s `xarray` module for reading and handling netCDF files in `tutorials/getting-started-with-xarray`, which may be useful for Challenges 2 and 3.
 
 ### Acknowledgements
 
