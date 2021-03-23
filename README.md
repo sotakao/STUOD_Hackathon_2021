@@ -1,12 +1,13 @@
 # ERC Stochastic Transport in Upper Ocean Dynamics Hackathon March 29-31 2021
 ![stuod logo](https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/erc-stuod-logos--tojpeg_1572609986634_x2.jpg)
+
+[Link to the event website](https://www.imperial.ac.uk/events/129398/stuods-hackathon/)
+
 ## Challenges 1+2+3: Machine Learning with Weather and Climate Data
 
 __Project leads:__ So Takao (UCL), Bertrand Chapron (IFREMER)
 
-Some weather/climate events such as, local precipitation events, tropical cyclone trajectoires, size and intensities, and/or El Nino occurrence and strength characteristics, still present major difficulties to forecast with conventional methods using numerical models. This proposed challenge is to explore the possibility of using recent machine learning techniques to deliver data-driven solutions to such complex problems.
-
-[Link to the event website](https://www.imperial.ac.uk/events/129398/stuods-hackathon/)
+Some weather/climate events such as: local precipitation events, tropical cyclone trajectoires, size and intensities, and/or El Nino occurrence and strength characteristics, still present major difficulties to forecast with conventional methods using numerical models. This proposed challenge is to explore the possibility of using recent machine learning techniques to deliver data-driven solutions to such complex problems.
 
 The participants can choose to work on one of the following areas:
 
