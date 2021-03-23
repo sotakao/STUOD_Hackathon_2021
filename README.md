@@ -34,6 +34,8 @@ An El Nino event is characterised by a warmer-than-average sea surface temperatu
 
 __El Nino:__ An event where the 5 months running average of the sea surface temperature anomaly in the Nino 3.4 region 5^\circ S ~ 5^\circ N, 120^\circ W ~ 170^\circ W (equivalently, -5^\circ ~ 5^\circ N, 190^\circ ~ 240^\circ E) exceeds 0.4^\circ C for a period of 6 months or longer.
 
+![el nino](images/nino.png)
+
 Your task is to predict the occurence of an El Nino event 1-6 months ahead of time using various attributes such as sea surface salinity, precipitation and wind speed. Note that this challenge is appropriate for more experienced participants as it requires knowledge of dealing with spatio-temporal data. Dataset for this challenge is available in netCDF format on [IFREMER's FTP server](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/). More details below on how to access this.
 
 ### Datasets
