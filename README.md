@@ -21,7 +21,7 @@ Rainfall intensity can be categorized as follows:
 - Rather heavy rain (35.5 - 64.5mm/hr)
 - Heavy rain (>64.5mm/hr)
 
-Your task is to predict the hourly rainfall in Basel, Switzerland during the period 03/2020-03/2021 based on the above 6 categories from various weather attributes such as temperature, wind velocity and pressure.
+Your task is to predict the hourly rainfall in Basel, Switzerland during the period 03/2020-03/2021 based on the 6 categories above from various weather attributes such as temperature, wind velocity and pressure.
 
 __Data:__ The dataset for the period 03/2010-03/2020 (downloaded from [meteoblue.com](https://www.meteoblue.com/en/weather/archive/export/basel_switzerland_2661604?daterange=2019-02-01%20to%202021-03-01&domain=NEMSAUTO&params%5B%5D=temp2m&params%5B%5D=precip&params%5B%5D=relhum2m&min=2020-02-01&max=2021-03-01&utc_offset=1&timeResolution=hourly&temperatureunit=CELSIUS&velocityunit=KILOMETER_PER_HOUR&energyunit=watts&lengthunit=metric&degree_day_type=10%3B30&gddBase=10&gddLimit=30)), is already available and can be found in the `datasets` folder. The dataset for the period 03/2020-03/2021, which is to be used for testing will be uploaded in the `datasets` folder on __30/03/2021 at 2pm__ (second day of hackathon) so keep an eye out!
 
@@ -31,7 +31,7 @@ __Additional comments:__ This project is suitable for beginners, as the dataset 
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
-An El Nino event is characterised by a warmer-than-average sea surface temperature in the equatorial pacific that persists for an extended period of time. This has a significant impact on Earth's ecosystem and is crucial that we are able to predict this. While there is no agreed definition of an El Nino event, a popular one that we will use for this challenge is:
+An El Nino event is characterised by a warmer-than-average sea surface temperature in the equatorial pacific that persists for an extended period of time. This has a significant impact on Earth's ecosystem and it is crucial that we are able to predict this. While there is no agreed definition of an El Nino event, a popular one that we will use for this challenge is:
 
 __El Nino ([Definition](https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers/defnBAMS.pdf)):__ An event where the 5 months running average of the sea surface temperature anomaly in the Nino 3.4 region 5°S ~ 5°N, 120° ~ 170°W (equivalently, -5° ~ 5°N, 190° ~ 240°E) exceeds 0.4°C for a period of 6 months or longer.
 
@@ -62,7 +62,7 @@ The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/project
 wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[variable].nc.gz -O filename.nc.gz
 ```
 
-where `[variable]` is to be replaced by one of the following geophysical variables:
+where `[variable]` is to be replaced by one of the following geophysical fields:
 - `cci_sst_1981_2018` or `cci_sst_anomalies_1981_2018`: sea surface temperature/anomalies from ESA CCI SST project (satellite)
 - `cci_sss_2010_2019` or `cci_sss_anomalies_2010_2019`:  sea surface salinity/anomalies from ESA CCI SSS project (satellite)
 - `isas_temperature_2002_2019` or `isas_temperature_anomalies_2002_2019`: water temperature in the first 300 m from Ifremer ISAS15 dataset (in situ measurements)
