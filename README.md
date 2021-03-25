@@ -29,32 +29,7 @@ __Additional comments:__ This project is suitable for beginners, as the dataset 
 
 ### Challenge 2: Predicting the trajectories of tropical cyclones
 
-This dataset contains the tracks of tropical cyclones over the last few years. It was obtained from the US Naval Research Laboratory (NRL). The tropical cyclone data comes from a variety of sources. Best track data for the Eastern Pacific, Central Pacific and the Atlantic are from the National Hurricane Center. The remaining data was extracted from the Joint Typhoon Warning Center (JTWC) Tropical Cyclone Data.
-
-These data are the 6-hourly storm positions based on a post-storm, subjectively smoothed path. In some cases, the data obtained was in 12 hour increments. For these storms, 6-hourly positions were interpolated using the method of Akima (1970). The best tracks files are named b<stormid>.dat. For example, bwp132000.dat contains best track positions for the 13th storm of the 2000 western north pacific season.
-The tropical cyclone description data is stored in flat ascii files. Each storm is given a unique eight character code called the storm ID to identify it in the database. The storm ID is of the format RECYYYYY, where
-
-RE = Region (basin) of Origin
-
-AL - North Atlantic
-
-WP - Western North Pacific
-
-CP - Central North Pacific
-
-EP - Eastern North Pacific
-
-IO - North Indian Ocean
-
-SH - Southern Hemisphere
-
-LS - Southern Atlantic
-
-CY = Annual Cyclone Number(01-99)
-
-YYYY = Year
-
-For example, WP011992 is the first (01) western North Pacific (WP) storm in 1992 (1992).
+Include problem statement here.
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
