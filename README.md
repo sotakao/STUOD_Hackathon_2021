@@ -64,7 +64,7 @@ __El Nino ([Definition](https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers
 
 ![el nino](images/nino.png)
 
-Your task is to predict the occurence of an El Nino event 1 ~ 6 months ahead of time using various attributes such as sea surface salinity, precipitation and wind speed. Use the last 
+Your task is to predict the occurence of an El Nino event 1 ~ 6 months ahead of time using various attributes such as sea surface salinity, precipitation and wind speed. We ask to use the last 5 years (2015-2020) for testing.
 
 __Data:__ Dataset for this challenge is available in netCDF format on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/). More details below on how to access this.
 
@@ -83,7 +83,7 @@ You can also download the meteoblue dataset from [google drive](https://drive.go
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv
 ```
 
-The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format. Alternatively, you can get it from terminal via the command:
+The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, which you can also get from terminal via the command:
 
 ```
 wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[variable].nc.gz -O filename.nc.gz
@@ -109,8 +109,8 @@ gunzip -d filename.nc.gz
 We have also provided an interactive three-part machine learning tutorial in the `tutorials` folder that will get all the particpants up to speed with the hackathon.
 This includes a detailed guide on:
 
-- The basics of statistical classification using the Lorenz '63 model, where the task is to classify points on the Lorenz attractor depending on whether it lands on the left or right butterfy wing after some time.
-- Introduction to statistical regression using the two-level Lorenz '96 model, where the task is to construct a parametrization scheme that models the subgrid scale effects on the slow variables.
+- The basics of statistical classification using the Lorenz '63 model.
+- Introduction to statistical regression using the two-level Lorenz '96 model.
 - Handling real data with `pandas` using a simplified version of the meteoblue data used in Challenge 1.
 
 Todo: Convert it to binder or colab format to make it interactive
