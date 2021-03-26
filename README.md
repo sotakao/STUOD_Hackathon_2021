@@ -94,4 +94,4 @@ We have also included a short guide on how to use `python`'s `xarray` module for
 
 ### Acknowledgements
 
-We would like to thank Ronan Fablet (IMT Atlantique) and Jean-Francois Piolle (IFRMER) for agreeing to help out with the hackathon. We thank especially Jean-Francois and Nicolas Reul (IFREMER) for providing us with the Tropical cyclone and El Nino datasets.
+We would like to thank Ronan Fablet (IMT Atlantique) and Jean-Francois Piolle (IFRMER) for agreeing to help us out. Special mention goes to Jean-Francois and Nicolas Reul (IFREMER) for providing us with the Tropical cyclone and El Nino datasets.
