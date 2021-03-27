@@ -27,12 +27,20 @@ __Data:__ The dataset for the period 03/2010-03/2020 (downloaded from [meteoblue
 
 __Additional comments:__ This project is suitable for beginners, as the dataset is relatively small and easy to handle (a short guide is available in the `tutorials` folder). However, that is not to say that it is not appropriate for more experienced participants as there are many interesting things one can do with this, such as figuring out how to deal with imbalanced classes or predicting the timeseries of all variables at once using more advanced tools such as seq2seq and LSTMs!
 
-### Challenge 2: Predicting the trajectories of tropical cyclones (TCs)
+### Challenge 2: Predicting the intensity and trajectories of tropical cyclones (TCs)
 
-- Can we improve in advance the highest intensity a TC will reach, i.e. how many days in advance can we forecast the max winds?
-- Rapid intensification (RI) of tropical cyclones (TCs) is defined as the 95th percentile of 24-hr over-water intensity changes, or an increase in intensity of at least 30 kt (1 kt ≈0.51 m s−1) in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
+In this challenge, you are provided with datasets about cyclone tracks (times and positions every 6 hours, with some properties on the storm development and extent) in various regions of origin. From this, we can ask the following questions:
+
+- Can we predict the highest intensity a TC will reach, and how many days in advance can we forecast the max winds?
 - Can we predict the mean number of TCs in different basins for next year, and how many will reach Categories 4 and 5?
-- With warmer/colder SST, fresher/salitier SSS and subsurface temperature/salinity in El-Nino/La Nina conditions, can we find it's impact on TC intensity, location and size?
+- Rapid intensification (RI) of TCs is defined as an increase in intensity of at least 30 kt (1 kt ≈0.51 m s−1) in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
+- With warmer/colder SST, fresher/salitier SSS and subsurface temperature/salinity in El-Nino/La Nina conditions, can we find its impact on TC intensity, location and size?
+
+Your task is to tackle one or more of these problems (or any other problems you would like to solve) using machine learning algorithms.
+
+__Data:__ Two sources of data are available for this challenge: One of them (from US NRL) is available on this github repository in the `datasets` folder and the other (from NOAA) is available [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/). See more details below about these datasets.
+
+__Additional comments:__ This challenge is relatively open-ended and has room for you to get adventurous. Beginning machine learning researchers may want to stick with the US NRL data as the file size is small and relatively easy to handle. More experienced researchers may wish to consider the NOAA dataset, which is larger and also contains external fields.
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
@@ -46,7 +54,7 @@ Your task is to predict the occurence of an El Nino event 1 ~ 6 months ahead of 
 
 __Data:__ Dataset for this challenge is available in netCDF format on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/). More details below on how to access this.
 
-__Additional comments:__ This challenge is appropriate for more experienced participants as it requires knowledge of dealing with spatio-temporal data.
+__Additional comments:__ This challenge is appropriate for more experienced participants as it requires knowledge of dealing with spatio-temporal data and large datasets.
 
 ### Datasets
 
@@ -62,23 +70,28 @@ You can also download the meteoblue dataset from [google drive](https://drive.go
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv
 ```
 
-We have two versions of data available for the tropical cyclones challenge. The first, smaller version can be found in the `datasets` folder, which you can also get on terminal using the command:
+We have two sources of data available for the tropical cyclones challenge. The first, smaller data obtained from the US Naval Research Laboratory can be found in the `datasets` folder, which you can also get on terminal using the command:
 
 ```
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
 ```
 
-These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`. Further information about this data can be found in the README file.
+These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`. Further information about this data can be found in the accompanying README file.
 
-The extended version of the cyclone data can be found [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/), which are in netCDF format. See the [accompanying documentation](https://www.ncdc.noaa.gov/ibtracs/index.php?name=ib-v4-access) for more details on this dataset.
+The second, larger version of the cyclone data from the The National Oceanic and Atmospheric Administration can be found [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/), which are stored in netCDF format. See the [accompanying documentation](https://www.ncdc.noaa.gov/ibtracs/index.php?name=ib-v4-access) for more details on this dataset.
 
-The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, which you can also get from terminal via the command:
+The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, which you can download it in full via the command:
 
 ```
-wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//[variable].nc.gz -O filename.nc.gz
+wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/
+```
+or if you prefer to pick and download the files individually (to save space), use:
+
+```
+wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//<variable>.nc.gz -O <filename>.nc.gz
 ```
 
-where `[variable]` is to be replaced by one of the following geophysical fields:
+where `<variable>` is to be replaced by one of the following geophysical fields:
 - `cci_sst_1981_2018` or `cci_sst_anomalies_1981_2018`: sea surface temperature/anomalies from ESA CCI SST project (satellite)
 - `cci_sss_2010_2019` or `cci_sss_anomalies_2010_2019`:  sea surface salinity/anomalies from ESA CCI SSS project (satellite)
 - `isas_temperature_2002_2019` or `isas_temperature_anomalies_2002_2019`: water temperature in the first 300 m from Ifremer ISAS15 dataset (in situ measurements)
@@ -90,7 +103,7 @@ where `[variable]` is to be replaced by one of the following geophysical fields:
 After downloading, you can unzip the file with the command
 
 ```
-gunzip -d filename.nc.gz
+gunzip -d <filename>.nc.gz
 ```
 
 ### Tutorials
@@ -108,4 +121,4 @@ We have also included a short guide on how to use `python`'s `xarray` module for
 
 ### Acknowledgements
 
-We would like to thank Ronan Fablet (IMT Atlantique) and Jean-Francois Piolle (IFRMER) for agreeing to help us out. Special mention goes to Jean-Francois and Nicolas Reul (IFREMER) for providing us with the Tropical cyclone and El Nino datasets.
+We would like to thank Ronan Fablet (IMT Atlantique) and Jean-Francois Piolle (IFRMER) for agreeing to help us out with the event. We would also like to thank Jean-Francois and Nicolas Reul (IFREMER) for providing us with the Tropical Cyclone and El Nino datasets.
