@@ -115,6 +115,7 @@ This includes a detailed guide on:
 - Introduction to statistical regression using the two-level Lorenz '96 model.
 - Handling real data with `pandas` using a simplified version of the meteoblue data used in Challenge 1.
 
+You can access this tutorial by forking this repo and going to the `tutorials` folder or by clicking the icon below:
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://mybinder.org/v2/gh/sotakao/STUOD_Hackathon_2021/de166a35e6f712b26a17693f3ec216dcf2b8f828)
 
 We have also included a short guide on how to use `python`'s `xarray` module for reading and handling netCDF files in `tutorials/getting-started-with-xarray`, which may be useful for Challenges 2 and 3.
