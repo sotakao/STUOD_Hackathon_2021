@@ -68,7 +68,7 @@ We have two versions of data available for the tropical cyclones challenge. The 
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
 ```
 
-These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`. Further information about the data can be found in the README file in `datasets/tropical_cyclones`.
+These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`. Further information about this data can be found in the README file.
 
 The extended version of the cyclone data can be found [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/), which are in netCDF format. See the [accompanying documentation](https://www.ncdc.noaa.gov/ibtracs/index.php?name=ib-v4-access) for more details on this dataset.
 
