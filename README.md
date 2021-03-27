@@ -27,9 +27,12 @@ __Data:__ The dataset for the period 03/2010-03/2020 (downloaded from [meteoblue
 
 __Additional comments:__ This project is suitable for beginners, as the dataset is relatively small and easy to handle (a short guide is available in the `tutorials` folder). However, that is not to say that it is not appropriate for more experienced participants as there are many interesting things one can do with this, such as figuring out how to deal with imbalanced classes or predicting the timeseries of all variables at once using more advanced tools such as seq2seq and LSTMs!
 
-### Challenge 2: Predicting the trajectories of tropical cyclones
+### Challenge 2: Predicting the trajectories of tropical cyclones (TCs)
 
-Include problem statement here.
+- Can we improve in advance the highest intensity a TC will reach, i.e. how many days in advance can we forecast the max winds?
+- Rapid intensification (RI) of tropical cyclones (TCs) is defined as the 95th percentile of 24-hr over-water intensity changes, or an increase in intensity of at least 30 kt (1 kt ≈0.51 m s−1) in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
+- Can we predict the mean number of TCs in different basins for next year, and how many will reach Categories 4 and 5?
+- With warmer/colder SST, fresher/salitier SSS and subsurface temperature/salinity in El-Nino/La Nina conditions, can we find it's impact on TC intensity, location and size?
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
@@ -49,14 +52,25 @@ __Additional comments:__ This challenge is appropriate for more experienced part
 
 Some datasets are already available on this github repository, which includes: 
 - Synthetic data from the Lorenz '63 and '96 models (used in `tutorials`)
-- Toy version of the meteoblue dataset (used in `tutorials`)
-- Full version of the meteoblue dataset for Challenge 1 (14.5MB total)
+- Toy version of the meteoblue dataset (2.9MB, used in `tutorials`)
+- Full version of the meteoblue dataset for Challenge 1 (14.5MB)
+- Short version of the tropical cyclone dataset for Challenge 2 (9.1 MB)
 
 You can also download the meteoblue dataset from [google drive](https://drive.google.com/drive/folders/1qFDy1qPg63MNmrFjiBHMlS4Mz14yzJ-C) or from terminal with the command:
 
 ```
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv
 ```
+
+We have two sources of data available for the tropical cyclones challenge. The first, smaller dataset can be found in the `datasets` folder, which you can also get on terminal using the command:
+
+```
+wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
+```
+
+These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`. Further information about the data can be found in the README file in `datasets/tropical_cyclones`.
+
+The extended version of the cyclone data can be found [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/), which are in netCDF format. See the [accompanying documentation](https://www.ncdc.noaa.gov/ibtracs/index.php?name=ib-v4-access) for more details on this dataset.
 
 The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, which you can also get from terminal via the command:
 
