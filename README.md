@@ -80,7 +80,7 @@ These data are stored in '.dat' format and can be read in `python` using modules
 
 The second, larger version of the cyclone data from the The National Oceanic and Atmospheric Administration can be found [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/), which are stored in netCDF format. See the [accompanying documentation](https://www.ncdc.noaa.gov/ibtracs/index.php?name=ib-v4-access) for more details on this dataset.
 
-The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, which you can download it in full via the command:
+The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/) in netCDF format, which you can download in full using the command:
 
 ```
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/
