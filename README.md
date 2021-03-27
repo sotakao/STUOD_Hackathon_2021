@@ -54,7 +54,7 @@ Some datasets are already available on this github repository, which includes:
 - Synthetic data from the Lorenz '63 and '96 models (used in `tutorials`)
 - Toy version of the meteoblue dataset (2.9MB, used in `tutorials`)
 - Full version of the meteoblue dataset for Challenge 1 (14.5MB)
-- Short version of the tropical cyclone dataset for Challenge 2 (9.1 MB)
+- Tropical cyclone dataset for Challenge 2 (9.1 MB)
 
 You can also download the meteoblue dataset from [google drive](https://drive.google.com/drive/folders/1qFDy1qPg63MNmrFjiBHMlS4Mz14yzJ-C) or from terminal with the command:
 
@@ -62,7 +62,7 @@ You can also download the meteoblue dataset from [google drive](https://drive.go
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv
 ```
 
-We have two sources of data available for the tropical cyclones challenge. The first, smaller dataset can be found in the `datasets` folder, which you can also get on terminal using the command:
+We have two versions of data available for the tropical cyclones challenge. The first, smaller version can be found in the `datasets` folder, which you can also get on terminal using the command:
 
 ```
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
