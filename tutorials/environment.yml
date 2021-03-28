@@ -1,0 +1,8 @@
+name: tutorials
+dependencies:
+  - numpy
+  - pandas
+  - xarray
+  - torch
+  - sklearn
+  - matplotlib
