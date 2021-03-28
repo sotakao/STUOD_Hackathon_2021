@@ -98,7 +98,7 @@ The El Nino dataset is available on [ftp://ftp.ifremer.fr/ifremer/cersat/project
 ```
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/
 ```
-or if you prefer to pick and download the files individually (to save space), use:
+or if you prefer to pick and download the files individually, use:
 
 ```
 wget ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino//<variable>.nc.gz -O <filename>.nc.gz
