@@ -126,7 +126,7 @@ This includes a detailed guide on:
 
 - The basics of statistical classification using the Lorenz '63 model.
 - Introduction to statistical regression using the two-level Lorenz '96 model.
-- Handling real data with `pandas` using a simplified version of the meteoblue data used in Challenge 1.
+- Handling real data with `pandas` using a simplified version of the meteoblue data.
 
 You can access this tutorial by forking this repo and heading to the `tutorials` folder, or by clicking the icon below:
 
