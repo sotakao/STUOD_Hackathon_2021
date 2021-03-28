@@ -33,14 +33,14 @@ In this challenge, you are provided with datasets about cyclone tracks (times an
 
 - Can we predict the highest intensity a TC will reach, and how many days in advance can we forecast the max winds?
 - Can we predict the mean number of TCs in different basins for next year, and how many will reach Categories 4 (113-136 knots) and 5 (>136 knots)?
-- Rapid intensification (RI) of TCs is defined as an increase in intensity of at least 30 kt (1 kt ≈0.51 m s−1) in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
+- Rapid intensification (RI) of TCs is defined as an increase in intensity of at least 30 knots in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
 - With warmer/colder SST, fresher/salitier SSS and subsurface temperature/salinity in El-Nino/La Nina conditions, can we find its impact on TC intensity, location and size?
 
 Your task is to tackle one or more of these problems (or any other problems you would like to solve) using machine learning algorithms.
 
-__Data:__ Two sources of data are available for this challenge: One of them (from US NRL) is available on this github repository in the `datasets` folder and the other (from NOAA) is available [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/). See more details below about these datasets.
+__Data:__ Two sources of data are available for this challenge: One of them, from the US Naval Research Laboratory (NRL) is available on this github repository in the `datasets` folder and the other, from NOAA is available [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/). See more details below about these datasets.
 
-__Additional comments:__ This challenge is relatively open-ended and has room for you to get adventurous. Beginning machine learning researchers may want to stick with the US NRL data as the file size is small and relatively easy to handle. More experienced researchers may wish to consider the NOAA dataset, which is larger and also contains external fields.
+__Additional comments:__ This challenge is relatively open-ended and has room for you to get adventurous.
 
 ### Challenge 3: Predicting the occurence of El Nino events
 
@@ -70,7 +70,7 @@ You can also download the meteoblue dataset from [google drive](https://drive.go
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QtXg1q7xfA1Tn_hBpAkI6nVGCO5_9Gfv' -O filename.csv
 ```
 
-We have two sources of data available for the tropical cyclones challenge. The first, smaller data obtained from the US Naval Research Laboratory can be found in the `datasets` folder, which you can also get on terminal using the command:
+We have two sources of data available for the tropical cyclones challenge. The first, smaller data obtained from the US NRL can be found in the `datasets` folder, which you can also get on terminal using the command:
 
 ```
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
