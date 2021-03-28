@@ -32,7 +32,7 @@ __Additional comments:__ This project is suitable for beginners, as the dataset 
 In this challenge, you are provided with datasets about cyclone tracks (times and positions every 6 hours, with some properties on the storm development and extent) in various regions of origin. From this, we can ask the following questions:
 
 - Can we predict the highest intensity a TC will reach, and how many days in advance can we forecast the max winds?
-- Can we predict the mean number of TCs in different basins for next year, and how many will reach Categories 4 and 5?
+- Can we predict the mean number of TCs in different basins for next year, and how many will reach Categories 4 (113-136 knots) and 5 (>136 knots)?
 - Rapid intensification (RI) of TCs is defined as an increase in intensity of at least 30 kt (1 kt ≈0.51 m s−1) in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
 - With warmer/colder SST, fresher/salitier SSS and subsurface temperature/salinity in El-Nino/La Nina conditions, can we find its impact on TC intensity, location and size?
 
