@@ -6,3 +6,4 @@ dependencies:
   - torch
   - sklearn
   - matplotlib
+  - tqdm
