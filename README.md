@@ -50,7 +50,7 @@ __El Nino ([Definition](https://www.cgd.ucar.edu/staff/trenbert/trenberth.papers
 
 ![el nino](images/nino.png)
 
-Your task is to predict the occurence of an El Nino event 1 ~ 6 months ahead of time using various attributes such as sea surface salinity, precipitation and wind speed. We ask to use the last 4 years (12/2014-12/2018) for testing.
+Your task is to predict the occurence of an El Nino event 1 ~ 6 months ahead of time using various attributes such as sea surface salinity, precipitation and wind speed.
 
 __Data:__ Dataset for this challenge is available in netCDF format on [ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/](ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/elnino/). More details below on how to access this.
 
