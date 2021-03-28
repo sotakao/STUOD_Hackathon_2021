@@ -76,7 +76,19 @@ We have two sources of data available for the tropical cyclones challenge. The f
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
 ```
 
-These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`. Further information about this data can be found in the accompanying README file.
+These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`:
+
+"""
+import pandas as pd
+import os
+names = ['BASIN', 'CY', 'YYYYMMDDHH', 'TECHNUM/MIN', 'TECH', 'TAU', 'LatN/S', 'LonE/W', 'VMAX', 'MSLP', 'TY', 'RAD', 'WINDCODE', 'RAD1', 'RAD2', 'RAD3', 'RAD4', 'POUTER', 'ROUTER', 'RMW', 'GUSTS', 'EYE', 'SUBREGION', 'MAXSEAS', 'INITIALS', 'DIR', 'SPEED', 'STORMNAME', 'DEPTH', 'SEAS', 'SEASCODE', 'SEAS1', 'SEAS2', 'SEAS3', 'SEAS4', 'USERDEFINED', 'userdata']
+stormdata = {}
+for filename in os.listdir(directory):
+    stormid = filename[:9]
+    stormdata[stormid] = pd.read_table(directory+filename, sep = ',', names = names)
+"""
+
+Further information about this dataset can be found in the accompanying README file.
 
 The second, larger version of the cyclone data from the The National Oceanic and Atmospheric Administration can be found [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/), which are stored in netCDF format. See the [accompanying documentation](https://www.ncdc.noaa.gov/ibtracs/index.php?name=ib-v4-access) for more details on this dataset.
 
