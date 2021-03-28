@@ -7,7 +7,7 @@
 
 __Project leads:__ So Takao (UCL), Bertrand Chapron (IFREMER)
 
-Some weather/climate events such as: local precipitation events, tropical cyclone trajectoires, size and intensities, and/or El Nino occurrence and strength characteristics, still present major difficulties to forecast with conventional methods using numerical models. This proposed challenge is to explore the possibility of using recent machine learning techniques to deliver data-driven solutions to such complex problems.
+Some weather/climate events such as local precipitation events, tropical cyclone trajectoires, size and intensities, and/or El Nino occurrence and strength characteristics, still present major difficulties to forecast with conventional methods using numerical models. This proposed challenge is to explore the possibility of using recent machine learning techniques to deliver data-driven solutions to such complex problems.
 
 The participants can choose to work on one of the following areas:
 
