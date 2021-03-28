@@ -36,7 +36,7 @@ In this challenge, you are provided with datasets about cyclone tracks (times an
 - Rapid intensification (RI) of TCs is defined as an increase in intensity of at least 30 knots in a 24-h period. Can we find the best statistical RI prediction schemes as function of along-track pre-storm SST, SSS, SLA, oceanic regions?
 - With warmer/colder SST, fresher/salitier SSS and subsurface temperature/salinity in El-Nino/La Nina conditions, can we find its impact on TC intensity, location and size?
 
-Your task is to tackle one or more of these problems (or any other problems you would like to solve) using machine learning algorithms.
+Your task is to tackle one or more of these problems (or any other problems you would like to solve) using machine learning/data-driven methods.
 
 __Data:__ Two sources of data are available for this challenge: One of them, from the US Naval Research Laboratory (NRL) is available on this github repository in the `datasets` folder and the other, from NOAA is available [here](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/netcdf/). See more details below about these datasets.
 
