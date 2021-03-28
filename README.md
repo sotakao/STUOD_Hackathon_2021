@@ -76,7 +76,7 @@ We have two sources of data available for the tropical cyclones challenge. The f
 wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/tracks/
 ```
 
-These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`:
+These data are stored in `.dat` format and can be read in `python` using modules such as `pandas`:
 
 ```python
 import pandas as pd
