@@ -78,7 +78,7 @@ wget -r ftp://ftp.ifremer.fr/ifremer/cersat/projects/stuod/hackathon/storm/track
 
 These data are stored in '.dat' format and can be read in `python` using modules such as `pandas`:
 
-"""
+```python
 import pandas as pd
 import os
 names = ['BASIN', 'CY', 'YYYYMMDDHH', 'TECHNUM/MIN', 'TECH', 'TAU', 'LatN/S', 'LonE/W', 'VMAX', 'MSLP', 'TY', 'RAD', 'WINDCODE', 'RAD1', 'RAD2', 'RAD3', 'RAD4', 'POUTER', 'ROUTER', 'RMW', 'GUSTS', 'EYE', 'SUBREGION', 'MAXSEAS', 'INITIALS', 'DIR', 'SPEED', 'STORMNAME', 'DEPTH', 'SEAS', 'SEASCODE', 'SEAS1', 'SEAS2', 'SEAS3', 'SEAS4', 'USERDEFINED', 'userdata']
@@ -86,7 +86,7 @@ stormdata = {}
 for filename in os.listdir(directory):
     stormid = filename[:9]
     stormdata[stormid] = pd.read_table(directory+filename, sep = ',', names = names)
-"""
+```
 
 Further information about this dataset can be found in the accompanying README file.
 
