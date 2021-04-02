@@ -135,6 +135,22 @@ You can access this tutorial by forking this repo and heading to the `tutorials`
 
 We have also included a short guide on how to use `python`'s `xarray` module for reading and handling netCDF files in `tutorials/getting-started-with-xarray`, which may be useful for Challenges 2 and 3.
 
-### Acknowledgements
 
+### Update
+
+Congratulations to all the teams who participated in the hackathon and completing the challenges! We were very impressed with all of your results.
+
+The winner for this event was Team 6 (Lois Baker, Stuart Patching, Tom Gregory), who worked on the El Nino challenge. The team used linear and logisitic regression with empirical orthogonal functions (EOFs) of SST anomaly as features to predict the occurence of an El Nino event 6 months in advance. We were sold by their creativity to use EOFs as features in order to avoid overfitting and the result they achieved were astonishing, given the limited amount of data they were provided. Congratulations again to Team 6!
+
+The runner-ups were Team 8 (Danila Kurganov, Oliver Phillips), who worked on various aspects of the tropical cyclones challenge and Team 9 (Phillip Breul, Benjamin Aslan, Jakob Wessel, Fiona Spuler) who used XGBoost to achieve incredible accuracy for predicting the rainfall in Basel. Congratualations again to Teams 8 and 9!
+
+Some other highlights of the event were:
+- Team 1 used Resevoir Computing to predict the Nino 3.4 index and found that the choice of hyperparameters were instrumental in achieving good performance.
+- Team 2 experimented with Bayesian techniques to predict the rainfall in Basel, in addition to coming up with an excellent motivation for working on this challenge that we had never imagined (involving tourism and Roger Federer).
+- Team 3 found that linear regression already works extremely well to predict the highest intensity of TCs using the other variables.
+- Despite their first time working on Machine Learning, Team 4 achieved very nice results to predict the rainfall in Basel, in addition to finding a discrepancy in the performance on the validation and test datasets
+- Teams 5 and 7 used SMOTE to deal with the class inbalance in the rainfall dataset and also considered different metrics since the persistence baseline already achieved high accuracy (since there was no rain in most days).
+- Team 10 attempted to use Graph Neural Networks to automatially learn which geographical locations affect the occurence of El Nino, without relying on expert knowledge (based on [this paper](https://arxiv.org/pdf/2012.01598.pdf)).
+
+### Acknowledgements
 We would like to thank Ronan Fablet (IMT Atlantique) and Jean-Francois Piolle (IFRMER) for agreeing to help us out with the event. We would also like to thank Jean-Francois and Nicolas Reul (IFREMER) for providing us with the Tropical Cyclone and El Nino datasets.
