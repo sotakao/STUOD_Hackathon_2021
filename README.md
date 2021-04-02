@@ -142,7 +142,7 @@ Congratulations to all the teams who participated in the hackathon and completin
 
 The winner for this event was Team 6 (Lois Baker, Stuart Patching, Tom Gregory), who worked on the El Nino challenge. The team used linear and logisitic regression with empirical orthogonal functions (EOFs) of SST anomaly as features to predict the occurence of an El Nino event 6 months in advance. We were sold by their creativity to use EOFs as features in order to avoid overfitting and the result they achieved were astonishing, given the limited amount of data they were provided. Congratulations again to Team 6!
 
-The runner-ups were Team 8 (Danila Kurganov, Oliver Phillips), who worked on various aspects of the tropical cyclones challenge and Team 9 (Phillip Breul, Benjamin Aslan, Jakob Wessel, Fiona Spuler) who used XGBoost to achieve incredible accuracy for predicting the rainfall in Basel. Congratualations again to Teams 8 and 9!
+The runner-ups were Team 8 (Danila Kurganov, Oliver Phillips), who worked on various aspects of the tropical cyclones challenge, achieving incredible $R^2$ scores and Team 9 (Phillip Breul, Benjamin Aslan, Jakob Wessel, Fiona Spuler) who used XGBoost to achieve incredible accuracy for predicting the rainfall in Basel. Congratualations again to Teams 8 and 9!
 
 Some other highlights of the event were:
 - Team 1 used Resevoir Computing to predict the Nino 3.4 index and found that the choice of hyperparameters were instrumental in achieving good performance.
