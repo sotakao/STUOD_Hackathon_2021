@@ -149,7 +149,7 @@ Some other highlights of the day were:
 - Team 2 experimented with Bayesian techniques to predict the rainfall in Basel, in addition to coming up with an excellent motivation for working on this challenge (involving tourism and Roger Federer).
 - Team 3 found that linear regression already works extremely well to predict the highest intensity of TCs using the other variables that were provided in the NRL dataset.
 - Despite their first time working on Machine Learning, Team 4 achieved high accuracy to predict the rainfall in Basel, in addition to finding a discrepancy in the performance on the validation and test datasets.
-- Teams 5 and 7 used SMOTE to deal with the class inbalance in the rainfall dataset and also considered different metrics for model comparison since the persistence baseline already achieved high accuracy due to the fact that there was no rain in most days.
+- Teams 5 and 7 used SMOTE to deal with the class inbalance in the rainfall dataset. They also considered different metrics for model comparison since the persistence baseline already achieved high accuracy due to the fact that there was no rain in most days.
 - Team 10 attempted to use Graph Neural Networks to automatially learn which geographical locations affect the occurence of El Nino without relying on expert knowledge (based on [this paper](https://arxiv.org/pdf/2012.01598.pdf)), however ran out of time.
 
 ### Acknowledgements
